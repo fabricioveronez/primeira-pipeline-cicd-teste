@@ -15,6 +15,11 @@ on:
             required: true
             description: "Kubeconfig para configurar o contexto do Kubernetes"
 jobs:
+    job-exemplo:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Comando Exemplo
+          run: echo "Teste de Execução"
     deploy-kubernetes:
         runs-on: ubuntu-latest
         steps:
