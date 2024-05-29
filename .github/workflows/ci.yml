@@ -31,5 +31,6 @@ jobs:
         k8s/deployment.yaml
       images: |
         fabricioveronez/aula-primeira-pipeline:v${{ github.run_number }} 
+      repository: fabricioveronez/primeira-pipeline-cicd-teste
     secrets:
       kubeconfig: ${{ secrets.K8S_CONFIG }}
