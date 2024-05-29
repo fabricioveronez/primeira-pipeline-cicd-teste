@@ -25,7 +25,7 @@ jobs:
           fabricioveronez/aula-primeira-pipeline:latest 
   CALL-CD:
     needs: [CI]
-    uses: fabricioveronez/primeira-pipeline-cicd-teste/.github/workflows/cd.yaml@main
+    uses: fabricioveronez/k8s-cd-teste/.github/workflows/cd.yaml@main
     with: 
       manifests: |
         k8s/deployment.yaml
