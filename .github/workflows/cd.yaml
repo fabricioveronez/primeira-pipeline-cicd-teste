@@ -22,6 +22,7 @@ jobs:
           run: echo "Teste de Execução"
     deploy-kubernetes:
         runs-on: ubuntu-latest
+        needs: [job-exemplo]
         steps:
             - name: Obtendo o código
               uses: actions/checkout@v4.1.5
