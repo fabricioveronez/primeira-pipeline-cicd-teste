@@ -24,6 +24,7 @@ jobs:
           fabricioveronez/aula-primeira-pipeline:v${{ github.run_number }} 
           fabricioveronez/aula-primeira-pipeline:latest 
   CD:
+    needs: [CI]
     uses: fabricioveronez/primeira-pipeline-cicd-teste/.github/workflows/cd.yaml@main
     with: 
       manifests: |
